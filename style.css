@@ -1,0 +1,133 @@
+body {
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    background-image: url("space.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2vh;
+}
+
+/* Container utama */
+.todo-wrapper {
+    max-width: 600px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Judul */
+.todo-wrapper h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Deskripsi */
+.todo-wrapper p {
+    color: gray;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form input */
+.todo-wrapper form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-wrapper input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* List */
+.todo-wrapper ol {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.todo-wrapper li {
+    padding: 10px;
+    margin: 8px 0;
+    background: #f5f5f5;
+    border-radius: 8px;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.todo-wrapper li:nth-child(even) {
+    background: #e8e8e8;
+}
+
+.todo-wrapper li:hover {
+    background: #dfefff;
+}
+
+/* Tombol umum */
+.pretty-button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.pretty-button:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+/* Tombol spesifik */
+#add-button {
+    background-color: forestgreen;
+}
+
+#clear-completed-button {
+    background-color: #3498db;
+}
+
+#empty-button {
+    background-color: #9b1c20;
+}
+
+#save-button {
+    background-color: #49b749;
+}
+
+/* Area tombol bawah */
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+}
+
+.bottom-buttons {
+    display: flex;
+    gap: 125px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+    opacity: 0.7;
+}
